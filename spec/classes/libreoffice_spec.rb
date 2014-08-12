@@ -2,7 +2,7 @@ require 'spec_helper'
 
 describe 'libreoffice' do
 
-  version = '4.2.5'
+  version = '4.3.0'
 
   let(:facts) do
     {
