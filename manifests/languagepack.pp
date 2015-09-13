@@ -8,10 +8,11 @@
 #
 #   class { 'libreoffice::languagepack':
 #     locale => 'de',
+#     version => '4.3.5'
 #   }
-class libreoffice::languagepack ($locale = 'de') {
+class libreoffice::languagepack ($locale = 'de', $version = '4.3.5') {
   package { 'LibreOffice LanguagePack':
     provider => 'appdmg',
-    source   => "http://download.documentfoundation.org/libreoffice/stable/4.1.4/mac/x86/LibreOffice_4.1.4_MacOS_x86_langpack_${locale}.dmg",
+    source   => "http://download.documentfoundation.org/libreoffice/stable/${$version}/mac/x86/LibreOffice_${$version}_MacOS_x86_langpack_${locale}.dmg",
   }
 }

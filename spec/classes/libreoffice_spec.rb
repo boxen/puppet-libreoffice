@@ -3,7 +3,7 @@ require 'spec_helper'
 describe 'libreoffice' do
 
   describe 'standard version' do
-    version = '4.2.5'
+    version = '4.3.5'
 
     let(:facts) do
       {
@@ -22,7 +22,7 @@ describe 'libreoffice' do
   end
 
   describe 'fixed version' do
-    version = '4.2.6'
+    version = '4.3.6'
     fix = '-secfix'
 
     let(:facts) do
